@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:layout_height="fill_parent"
+			android:paddingRight="10dip"
+			>
+			
+	<FrameLayout
+		android:id="@+id/LayOut"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bluebg_300_48"
+		>
+  	
+    <LinearLayout
+    	android:id="@+id/BookTitleId"
+    	android:orientation="vertical"
+		android:layout_width="340px"
+		android:layout_height="80px"
+		>
+    	
+    	<TextView 
+			android:id="@+id/Tittle"
+			android:textSize="20px"
+			android:textColor="#ccffff"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scrollHorizontally="true"
+			android:ellipsize="end"
+		/>
+		
+    	<TextView 
+			android:id="@+id/Author"
+			android:textSize="16px"
+			android:textColor="#99ffff"
+			android:textStyle="italic"
+			android:paddingLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:ellipsize="end"
+		/>
+	</LinearLayout>
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:paddingRight="10px"
+		>
+		<ImageView
+    		android:id="@+id/Image"
+      		android:layout_width="55px"
+    		android:layout_height="80px"
+    		android:layout_gravity="center_vertical"
+       		android:paddingTop="10dp"
+    		android:paddingBottom="10dp"
+	  	/>
+	  	</LinearLayout>
+	</FrameLayout>	
+	
+</LinearLayout>

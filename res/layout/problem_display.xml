@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginRight="10dip"
+			>
+			
+	<FrameLayout
+		android:id="@+id/LayOut"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:background="@drawable/bluebg_300_48"
+		android:layout_height="70px"
+		>
+  	
+    <LinearLayout
+    	android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+    	
+    	<TextView 
+			android:id="@+id/tittle"
+			android:textSize="20px"
+			android:textColor="#ccffff"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scrollHorizontally="true"
+			android:ellipsize="end"
+			android:text="hello, android"
+		/>
+    	<TextView 
+			android:id="@+id/subTittle"
+			android:textSize="15px"
+			android:textColor="#ccffff"
+			android:paddingLeft="10dp"
+			android:paddingTop="6dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scrollHorizontally="true"
+			android:ellipsize="end"
+			android:text="hello, android"
+		/>
+	</LinearLayout>
+		
+		<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right|center_vertical" 
+		>
+		
+		<TextView 
+			android:id="@+id/fromUser"
+			android:textSize="15px"
+			android:textColor="#66FF66"
+			android:paddingRight="10dp"
+			android:paddingTop="6dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" android"
+		/>
+		<TextView 
+			android:id="@+id/time"
+			android:textSize="12dip"
+			android:textColor="#33CCFF"
+			android:layout_marginRight="10dip"
+			android:paddingTop="6dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" 00:00:00:0::00:0000"
+			android:textStyle="bold"
+		/>
+		
+	</LinearLayout>
+	
+	</FrameLayout>	
+	
+</LinearLayout>

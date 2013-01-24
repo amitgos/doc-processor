@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="#FFFFFF"
+			android:orientation="vertical">
+  	<ScrollView 
+  			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+  	<LinearLayout 
+  			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+  
+    	<LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_horizontal"
+    		android:layout_margin="12dip"
+    		android:background="@drawable/alphen_bigshop_3">
+    		
+    		<TextView 
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+				android:text="Alpen BigShop"
+				android:textSize="20dip"
+				android:textStyle="bold"    
+				android:textColor="#B8D6EF"			
+    		/>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:gravity="center"
+    		>
+    	<ImageView
+    		android:layout_width="140dip"
+    		android:layout_height="180dip"
+    		android:src="@drawable/cook_veg"
+    		android:layout_margin="6dip"
+    	/>
+    	
+    	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Vegetable Cook Notes"
+    		android:textSize="15dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/textColor"		
+    	/>
+    	
+    	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Note Details"
+    		android:textSize="18dip"
+    		android:textStyle="italic"
+    		android:textColor="@color/textColor"		
+       	/>
+       	<LinearLayout 
+       		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+       	>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Item name :"
+    		android:textColor="@color/textColor"	
+    		android:textStyle="bold"	
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Vegetable Cook Book"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+      	</LinearLayout> 	
+      	
+      	<LinearLayout 
+       		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+       	>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Item Code:"
+    		android:textColor="@color/textColor"	
+    		android:textStyle="bold"	
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=" BBA-3130"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+      	</LinearLayout> 	
+      	
+      	<LinearLayout 
+       		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+       	>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="ISBN:"
+    		android:textColor="@color/textColor"	
+    		android:textStyle="bold"	
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=" 9.78184E+12"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+      	</LinearLayout> 	
+      	
+      <LinearLayout 
+       		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+       	>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="author:"
+    		android:textColor="@color/textColor"	
+    		android:textStyle="bold"	
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text=" Valerie Ferguson"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+      	</LinearLayout> 	
+      	
+      	
+      	
+    	</LinearLayout>
+    	
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:padding="20dip"
+    		android:background="@drawable/purchase_button_background"
+    		android:layout_margin="15dip"
+    		>
+    		<Button
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Buy Now With in 1-Click"
+    		/>
+	    	<Button
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Try a Sample"
+    		/>
+    	</LinearLayout>
+    	</LinearLayout>
+  	</ScrollView>	
+		
+		
+</LinearLayout>

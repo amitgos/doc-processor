@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background_1"
+              >
+              
+<ScrollView
+android:id="@+id/ScrollView"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fadingEdge="none"
+android:scrollbars="none"
+
+>
+	<LinearLayout
+	android:id="@+id/scrollLayout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center_horizontal"
+	>
+
+	</LinearLayout>
+</ScrollView>            
+</LinearLayout>

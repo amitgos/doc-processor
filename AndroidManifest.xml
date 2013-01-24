@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.geometerplus.zlibrary.ui.android" android:versionCode="602" android:versionName="0.6.2" xmlns:android="http://schemas.android.com/apk/res/android">
+	<uses-sdk android:minSdkVersion="3"/>
+<!--	<supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:anyDensity="true" />-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<application android:name=".library.ZLAndroidApplication" android:label="DocProcessor" android:icon="@drawable/icon">
+		<activity android:name=".library.BugReportActivity" android:label="FBReader crash" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.geometerplus.android.fbreader.FBReader" android:launchMode="singleTask" android:icon="@drawable/fbreader" android:label="FBReader" android:configChanges="orientation|keyboardHidden">
+			
+			<meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.TextSearchActivity" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.TextSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.BookSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.BookmarkSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.LibraryTabActivity" android:configChanges="orientation|keyboardHidden">
+			<meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.BookSearchActivity" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.network.NetworkLibraryActivity" android:process=":networkLibrary" android:configChanges="orientation|keyboardHidden" />
+		<service android:name="org.geometerplus.android.fbreader.network.CatalogDownloaderService" android:process=":networkLibrary" />
+		<activity android:name="org.geometerplus.android.fbreader.network.NetworkBookInfoActivity" android:process=":networkLibrary" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.geometerplus.android.fbreader.network.BookDownloaderCallback" android:process=":networkLibrary" android:theme="@android:style/Theme.NoDisplay" />
+		<activity android:name="org.geometerplus.android.fbreader.TOCActivity" android:configChanges="orientation|keyboardHidden" android:theme="@style/doc_style" />
+		<activity android:name="org.geometerplus.android.fbreader.BookmarksActivity" android:configChanges="orientation|keyboardHidden">
+			<meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.BookmarkSearchActivity" />
+		</activity>
+		<activity android:name="org.geometerplus.android.fbreader.BookmarkEditActivity" android:theme="@android:style/Theme.Dialog" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.geometerplus.android.fbreader.preferences.PreferenceActivity" android:configChanges="orientation|keyboardHidden" android:theme="@style/doc_style" />
+		<activity android:name="org.geometerplus.android.fbreader.preferences.BookInfoActivity" android:configChanges="orientation|keyboardHidden" android:theme="@style/doc_style" />
+		<activity android:name="org.geometerplus.android.fbreader.network.BookDownloader" android:process=":bookDownloader" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.epub" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.oeb" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.fb2" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.fb2\\.zip" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.mobi" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.prc" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*" android:scheme="http" />
+				<data android:mimeType="application/epub+zip" />
+				<data android:mimeType="application/x-pilot-prc" />
+				<data android:mimeType="application/x-mobipocket-ebook" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*rus.ec" android:mimeType="application/zip" android:scheme="http" />
+			</intent-filter>
+		</activity>
+		<service android:name="org.geometerplus.android.fbreader.network.BookDownloaderService" android:process=":bookDownloader" />
+		<activity android:name="org.geometerplus.zlibrary.ui.android.dialogs.DialogActivity" android:configChanges="orientation|keyboardHidden" android:label="DocProcessor" android:theme="@style/doc_style" />
+	<activity android:name="org.geometerplus.android.fbreader.MyBookreaderActivity" android:label="FBReader">
+
+</activity>
+<activity android:name="org.geometerplus.android.fbreader.AnnotateActivity" android:configChanges="keyboardHidden|orientation"><meta-data android:name="android.app.default_searchable" android:value="com.chaturs.AnnotateSearchActivity" /></activity>
+<activity android:name="com.chaturs.BigShopActivity"><meta-data android:name="android.app.default_searchable" android:value="com.chaturs.BigShopSearchActivity" /></activity>
+<activity android:name="com.chaturs.BookShelfActivity">
+<meta-data android:name="android.app.default_searchable" android:value="com.chaturs.BookShelfSearchActivity" />
+</activity>
+<activity android:name="com.chaturs.StudyGroupActivity" android:configChanges="keyboardHidden|orientation"><meta-data android:name="android.app.default_searchable" android:value="com.chaturs.StudyGroupSearchActivity" /></activity>
+<activity android:name="com.chaturs.HomeActivity" android:launchMode="singleTask"><meta-data android:name="android.app.default_searchable" android:value="com.chaturs.SearchActivity" /><intent-filter><category android:name="android.intent.category.DEFAULT" /><action android:name="android.intent.action.MAIN"></action>
+<category android:name="android.intent.category.HOME"></category>
+
+</intent-filter>
+
+</activity>
+<activity android:name="com.chaturs.BeAStutorActivity"></activity>
+<activity android:name="com.chaturs.StudyGroupProblemActivity" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+
+<activity android:name="com.chaturs.BigShopBookPurchaseActivity"></activity>
+
+<provider android:authorities="com.chaturs.NotePad" android:name="com.chaturs.notepad.NotePadProvider"></provider>
+<activity android:name="com.chaturs.notepad.NotesList" android:label="@string/title_notes_list" android:launchMode="singleTop"><intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter><intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter></activity>
+ <activity android:label="@string/title_note" android:screenOrientation="sensor" android:configChanges="keyboardHidden|orientation" android:icon="@android:drawable/ic_menu_edit" android:launchMode="singleTop" android:name="com.chaturs.notepad.NoteEditor">
+            <!-- This filter says that we can view or edit the data of
+                 a single note -->
+            <intent-filter android:label="@string/resolve_edit">
+            	
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.chaturs.notepad.action.EDIT_NOTE"/>
+                <action android:name="com.android.notepad.action.EDIT_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+
+            <!-- This filter says that we can create a new note inside
+                 of a directory of notes. -->
+            
+
+        </activity>
+        <activity android:label="@string/title_edit_title" android:theme="@android:style/Theme.Dialog" android:icon="@drawable/edit_title" android:windowSoftInputMode="stateVisible" android:name="com.chaturs.notepad.TitleEditor">
+            <!-- This activity implements an alternative action that can be
+                 performed on notes: editing their title.  It can be used as
+                 a default operation if the user invokes this action, and is
+                 available as an alternative action for any note data. -->
+            <intent-filter android:label="@string/resolve_title">
+                <!-- This is the action we perform.  It is a custom action we
+                     define for our application, not a generic VIEW or EDIT
+                     action since we are not a general note viewer/editor. -->
+                <action android:name="com.android.notepad.action.EDIT_TITLE" />
+                <!-- DEFAULT: execute if being directly invoked. -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- ALTERNATIVE: show as an alternative action when the user is
+                     working with this type of data. -->
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <!-- SELECTED_ALTERNATIVE: show as an alternative action the user
+                     can perform when selecting this type of data. -->
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <!-- This is the data type we operate on. -->
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+        </activity>
+
+
+
+
+<activity android:label="@string/title_create" android:name="com.chaturs.notepad.CreateNote"><intent-filter>
+                <action android:name="com.chaturs.notepad.action.INSERT_NOTE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter></activity>
+<activity android:name="org.geometerplus.android.fbreader.TestActivity"></activity>
+
+
+<activity android:name="com.chaturs.CreateNotePaint" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="com.chaturs.NotePaintList" android:theme="@style/doc_style"></activity>
+<activity android:name="com.chaturs.BigShopSection"><meta-data android:name="android.app.default_searchable" android:value="com.chaturs.BigShopSearchActivity" /></activity>
+<activity android:name="com.chaturs.SearchActivity" android:launchMode="singleTop" android:theme="@style/doc_style">
+
+ <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter><meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+
+</activity>
+
+
+
+
+
+<activity android:name="com.chaturs.StudyGroupSearchActivity" android:launchMode="singleTop" android:theme="@style/doc_style">
+             
+        <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter><meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />    
+</activity>
+<activity android:name="com.chaturs.AnnotateSearchActivity" android:launchMode="singleTop" android:theme="@style/doc_style">
+	<intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+           </activity>
+<activity android:name="com.chaturs.BigShopSearchActivity" android:launchMode="singleTop">
+
+<intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+</activity>
+<activity android:name="com.chaturs.BookShelfSearchActivity" android:theme="@style/doc_style" android:launchMode="singleTop"><meta-data android:name="android.app.searchable" android:resource="@xml/searchable" /><intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+
+<activity android:theme="@style/doc_style" android:name="com.chaturs.AnnotateSearchDiaplay" android:launchMode="singleTop"></activity>
+<activity android:name="com.chaturs.NoteDisplayActivity" android:theme="@android:style/Theme.Light"></activity>
+<activity android:name="com.chaturs.SettingsActivity"></activity>
+</application>
+<uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+
+<uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+</manifest> 

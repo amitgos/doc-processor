@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<ImageButton
+		android:id="@+id/left_bigshop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/big_shop_left"
+		android:layout_gravity="center_vertical"
+		android:paddingRight="10dip"
+		/>
+
+	<Gallery
+		android:id="@+id/list_gallery" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:spacing="80px"
+		android:fadingEdge="none"
+		
+	/>
+	
+	<ImageButton
+		android:id="@+id/right_bigshop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/big_shop_right"
+		android:layout_gravity="center_vertical"
+		android:paddingLeft="10dip"
+		/>
+</LinearLayout>

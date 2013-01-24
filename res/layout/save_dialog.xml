@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              >
+      <EditText
+              android:id="@+id/Savecontext"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_margin="10dip"
+              android:gravity="top"
+              android:minLines="2"
+               android:capitalize="sentences"
+             
+          />     
+          
+        <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="Add" 
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+			android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="Cancel" />
+
+    </LinearLayout>
+          
+</LinearLayout>

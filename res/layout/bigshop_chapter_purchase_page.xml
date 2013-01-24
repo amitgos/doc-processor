@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="#FFFFFF"
+			android:orientation="vertical">
+  	<ScrollView 
+  			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+  	<LinearLayout 
+  			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+  
+    	<LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_horizontal"
+    		android:layout_margin="12dip"
+    		android:background="@drawable/alphen_bigshop_3">
+    		
+    		<TextView 
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+				android:text="Alpen BigShop"
+				android:textSize="20dip"
+				android:textStyle="bold"    
+				android:textColor="#B8D6EF"			
+    		/>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:gravity="center"
+    		>
+    	
+    	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:orientation="vertical">
+    	
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dip"
+    		android:text="Chapter 1"
+    		android:textSize="18dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/textColor"		
+    	/>
+    	
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dip"
+    		android:text="From Around the world in eight days"
+    		android:textSize="15dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/textColor"		
+    	/>
+    	
+    	<LinearLayout
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dip"
+    	>
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Written by: "
+    		android:textColor="@color/textColor"
+    		android:textStyle="italic"		
+    		
+       	/>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="jules verne"
+    		android:textColor="@color/textColor"		
+       	/>
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dip"
+    	>
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Published : "
+    		android:textColor="@color/textColor"
+    		android:textStyle="italic"		
+    		
+       	/>
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="1872"
+    		android:textColor="@color/textColor"		
+       	/>
+    	</LinearLayout>
+    	
+    	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="digital List Price : $8.60"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Print List Price : $7:50"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+       	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="bigshop Price : $4.45"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+       	 	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Total Save : $4.32"
+    		android:textColor="@color/textColor"		
+       	/>
+       	
+    	</LinearLayout>
+    	
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:padding="20dip"
+    		android:background="@drawable/purchase_button_background"
+    		android:layout_margin="15dip"
+    		>
+    		<Button
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Buy Now With in 1-Click"
+    		/>
+	    	<Button
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Try a Sample"
+    		/>
+    	</LinearLayout>
+    	<TextView 
+    		
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/textColor"
+    		android:text="@string/chapter_description"
+    		android:padding="15dip"
+    	/>
+    	</LinearLayout>
+  	</ScrollView>	
+		
+		
+</LinearLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#FFFFFF"
+              android:layout_gravity="center_horizontal"
+              android:paddingTop="10dip"
+              >
+	<TextView
+		android:id="@+id/annotation_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Annotation "
+		android:textAppearance="?android:attr/textAppearanceMedium"	
+		android:background="@drawable/alphen_bigshop_2"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center_horizontal"
+	/>
+	<ImageView
+	android:id="@+id/annotatedImage"	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="10dip"
+	/>
+	<TextView android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:text="Comment"
+	 android:textAppearance="?android:attr/textAppearanceMedium" 
+	android:background="@drawable/alphen_bigshop_2" 
+	android:gravity="center_horizontal"
+	android:layout_gravity="center_horizontal" 
+	/>
+	
+	<TextView 
+	android:id="@+id/annotatedText"	
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"	
+	android:textSize="20dip"
+	android:textColor="#000000"
+	android:padding="10dip"
+	android:text="No Comment"
+	/>
+	
+	<View 
+		android:layout_width="fill_parent"
+		android:layout_height="1dip"
+		android:background="#666666"
+	/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="empty_string"></string>
+	<string name="menu_delete">Delete</string>
+    <string name="menu_insert">Add note</string>
+    <string name="menu_revert">Revert</string>
+    <string name="menu_discard">Discard</string>
+
+    
+      
+
+    <string name="title_create">New Doc</string>
+    <string name="title_edit">Edit Doc</string>
+	<string name="title_notes_list">Doc List</string>   
+	<string name="title_note">Note</string>  
+	<string name="title_edit_title">Note title:</string>  
+	
+	<string name="app_name">Doc Pad</string>  
+	
+	<string name="button_ok">OK</string>  
+	
+	<string name="error_title">Error</string>
+	<string name="error_message">Error loading note</string>
+<string name="book_description">&quot;&quot;Moby-Dick is an 1851 novel by Herman Merville. The story tells the adventures of the wondering sailor ishmael and his voyage on the whailing ship pequod , commanded by captain Ahab. Ishmael soon learns that...&quot;&quot;</string>
+<string name="resolve_title">edit title</string>
+<string name="resolve_edit">edit Doc</string>
+<string name="unknown">UnKnown</string>
+<string name="error_msg_add_annotate">Please enter some text !</string>
+<string name="rename">Rename </string>
+<string name="rename_title">Rename paint</string>
+<string name="rename_action">Ok</string>
+<string name="cancel_action">Cancel</string>
+<string name="rename_paint_dialog_title">Rename Paint</string>
+<string name="paint_rename_label">Paint name</string>
+<string name="paint_delete_sucess">Paint Deleted</string>
+<string name="chapter_description">In Which phileas fogg and passepartout accept each  other ,the one as master other as man</string><string name="search_results">Search results for </string>
+
+<string name="menu_rename">Rename</string>
+<string name="Rename_note">Rename note</string>
+<string name="Ok">Ok</string>
+<string name="Cancel">Cancel</string>
+</resources>

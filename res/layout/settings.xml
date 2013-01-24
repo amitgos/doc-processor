@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background_1"
+              android:paddingTop="10dip"
+              >
+   
+      
+      <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/alphen_bigshop_2"
+        	android:text ="User Name"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:textStyle="bold"
+        	android:textSize="16dip"
+        	android:textColor="#ffffff"
+        	
+        />
+        
+      <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dip">  
+		<EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="text"
+            android:layout_weight="1"
+            /> 
+        	<Button
+            android:id="@+id/Set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+           	android:layout_gravity="right"
+            android:text="Set" />
+    </LinearLayout>
+     </LinearLayout>
+     
+    <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/alphen_bigshop_2"
+        	android:text ="IP Adress"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:textStyle="bold"
+        	android:textSize="16dip"
+        	android:textColor="#ffffff"
+        />
+        
+      <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dip">  
+		<EditText
+            android:id="@+id/ipvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+    		 /> 
+        	<Button
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+           	android:layout_gravity="right"
+            android:text="Save" />
+    </LinearLayout>
+     </LinearLayout>
+        
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="doc_style" >
+
+          <item name="android:windowBackground">@color/background_1</item>
+
+        <item name="android:colorBackground">@color/background_1</item>
+
+        <item name="android:colorForeground">@color/background_1</item>
+
+        <item name="android:colorForegroundInverse">@color/background_1</item>
+
+         <item name="android:textColorPrimary">@color/textColor</item>
+         
+		<item name="android:textColorSecondary">@color/textColor2</item>
+
+
+<!--         <item name="android:textColorPrimaryDisableOnly">@android:color/primary_text_light_disable_only</item>-->
+<!---->
+<!--        <item name="android:textColorPrimaryNoDisable">@android:color/primary_text_light_nodisable</item>-->
+
+       
+
+<!--        <item name="android:textColorHint">@android:color/hint_foreground_light</item>-->
+<!---->
+<!--        <item name="android:textColorHintInverse">@android:color/hint_foreground_dark</item>-->
+
+         <item name="android:popupWindowStyle">@android:style/Widget.PopupWindow</item>
+
+<!--        <item name="android:textCheckMark">@android:drawable/indicator_check_mark_light</item>-->
+
+<!--         <item name="android:textCheckMarkInverse">@android:drawable/indicator_check_mark_dark</item>-->
+
+<!--        <item name="android:listViewStyle">@android:style/Widget.ListView.White</item>-->
+
+        <item name="android:listDivider">@color/darkcolor</item>
+
+        <item name="android:listSeparatorTextViewStyle">@style/ListSeparator</item>
+
+    </style>
+    
+     <style name="ListSeparator">
+
+          <item name="android:background">@drawable/alphen_bigshop_2</item>
+
+          <item name="android:layout_width">fill_parent</item>
+
+          <item name="android:layout_height">25dip</item>
+
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+
+        <item name="android:textSize">14sp</item>
+
+         <item name="android:gravity">center_vertical</item>
+
+         <item name="android:paddingLeft">5sp</item>
+
+     </style>
+    
+    </resources>

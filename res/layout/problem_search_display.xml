@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:layout_height="70px"
+			android:background="@drawable/bluebg_300_48"
+			>
+			
+	  	
+    <LinearLayout
+    	android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding ="10dip" 
+		>
+    	
+    	<TextView 
+			android:id="@+id/title"
+		 	android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#ccffff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scrollHorizontally="true"
+			android:ellipsize="end"
+			android:text ="title"
+		/>
+    	<TextView 
+			android:id="@+id/subTitle"
+			android:textColor="#99ffff"
+			android:textStyle="italic"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:text="subTitle"
+		/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right|center_vertical" 
+		android:paddingRight="10dip"
+		>
+		<TextView 
+			android:id="@+id/fromUser"
+			android:textSize="15px"
+			android:textColor="#66FF66"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" userName"
+		/>
+	</LinearLayout>
+	
+</FrameLayout>

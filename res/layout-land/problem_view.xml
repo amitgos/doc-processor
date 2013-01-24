@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#ffffffff">
+  
+	<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:layout_marginTop="10dip"
+	android:orientation="vertical"
+	android:layout_weight="1"
+	>
+	<ScrollView
+	android:id="@+id/ScrollView"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:fadingEdge="none">
+		<LinearLayout
+			android:id="@+id/StudyGroupProblemLayout"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Problem"
+			android:textSize="18dip"
+			android:textStyle="bold"
+			android:textColor="#ffffff"
+			android:capitalize="none"
+			android:background="@drawable/alphen_bigshop_2"
+			android:gravity="center_horizontal"
+			/>	
+		</LinearLayout>
+	</ScrollView>   
+	</LinearLayout>
+	
+	
+	
+	
+
+
+</LinearLayout>
